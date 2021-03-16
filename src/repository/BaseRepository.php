@@ -1,8 +1,8 @@
 <?php
 
-namespace FsaNano\LaravelMakeRepository\Repository;
+namespace JasonGuru\LaravelMakeRepository\Repository;
 
-use FsaNano\LaravelMakeRepository\Exceptions\GeneralException;
+use JasonGuru\LaravelMakeRepository\Exceptions\GeneralException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection;
 

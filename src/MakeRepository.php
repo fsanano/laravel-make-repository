@@ -1,6 +1,6 @@
 <?php
 
-namespace FsaNano\LaravelMakeRepository;
+namespace JasonGuru\LaravelMakeRepository;
 
 use Illuminate\Console\GeneratorCommand;
 

@@ -3,9 +3,9 @@
     "repositories": [
         {
           "type": "git",
-          "url": "https://github.com/fsanano/laravel-make-repository.git"
+          "url": "git@github.com:fsanano/laravel-make-repository.git"
         }
-    ],
+      ],
     "description": "A simple fork to create a make:repository command for Laravel 5+",
     "type": "library",
     "require": {
