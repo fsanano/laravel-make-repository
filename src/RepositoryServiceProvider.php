@@ -1,6 +1,6 @@
 <?php
 
-namespace JasonGuru\LaravelMakeRepository;
+namespace FsaNano\LaravelMakeRepository;
 
 use Illuminate\Support\ServiceProvider;
 

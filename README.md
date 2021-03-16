@@ -40,7 +40,7 @@ Example:
 
 namespace DummyNamespace;
 
-use JasonGuru\LaravelMakeRepository\Repository\BaseRepository;
+use FsaNano\LaravelMakeRepository\Repository\BaseRepository;
 //use Your Model
 
 /**

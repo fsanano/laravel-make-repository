@@ -1,6 +1,6 @@
 <?php
 
-namespace JasonGuru\LaravelMakeRepository\Repository;
+namespace FsaNano\LaravelMakeRepository\Repository;
 
 /**
  * Interface RepositoryContract.
