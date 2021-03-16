@@ -3,6 +3,7 @@
 namespace DummyNamespace;
 
 use JasonGuru\LaravelMakeRepository\Repository\BaseRepository;
+use App\Helpers\FormHelper;
 //use Your Model
 
 /**
@@ -16,6 +17,35 @@ class DummyClass extends BaseRepository
      */
     public function model()
     {
-        //return YourModel::class;
+        //return YourModel;
+    }
+
+    public function filter($request)
+    {
+        $items = $this->model;
+
+        $filters = [''];
+
+        foreach ($filters as $filter) {
+            if ($request->filled($filter)) {
+                $items = $items->where($filter, $request->get($filter));
+            }
+        }
+
+        return $items;
+    }
+
+    public function options()
+    {
+        $l1s = FormHelper::getOptions((new SbjiL1()), 'l1_code', 'l1');
+
+        return compact('l1s');
+    }
+
+    public function logs()
+    {
+        return \App\AdminLog::where('table', $this->table())
+            ->orderBy('id', 'DESC')
+            ->get();
     }
 }

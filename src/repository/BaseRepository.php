@@ -97,6 +97,21 @@ abstract class BaseRepository implements RepositoryContract
         return $this->model = $model;
     }
 
+    public function table()
+    {
+        return $this->model->getTable();
+    }
+
+    public function db()
+    {
+        return $this->model->getConnectionName() ?? 'salaryboard';
+    }
+
+    public function cols()
+    {
+        return \Schema::getColumnListing($this->table());
+    }
+
     /**
      * Get all the model records in the database.
      *
