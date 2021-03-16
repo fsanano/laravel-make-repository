@@ -1,6 +1,6 @@
 {
-    "name": "jason-guru/laravel-make-repository",
-    "description": "A simple package to create a make:repository command for Laravel 5+",
+    "name": "fsanano/laravel-make-repository",
+    "description": "A simple fork to create a make:repository command for Laravel 5+",
     "type": "library",
     "require": {
         "php": ">=5.4.0"
@@ -8,22 +8,22 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "G Jason Sharma",
-            "email": "g.jason.sharma@gmail.com"
+            "name": "Sergey Fokin",
+            "email": "memonanofsa@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "JasonGuru\\LaravelMakeRepository\\RepositoryServiceProvider"
+                "FsaNano\\LaravelMakeRepository\\RepositoryServiceProvider"
             ]
         }
     },
     
     "autoload": {
         "psr-4": {
-            "JasonGuru\\LaravelMakeRepository\\": "src/"
+            "FsaNano\\LaravelMakeRepository\\": "src/"
         },
         "classmap": ["src/"]
     }
