@@ -41,11 +41,4 @@ class DummyClass extends BaseRepository
 
         return compact('l1s');
     }
-
-    public function logs()
-    {
-        return \App\AdminLog::where('table', $this->table())
-            ->orderBy('id', 'DESC')
-            ->get();
-    }
 }

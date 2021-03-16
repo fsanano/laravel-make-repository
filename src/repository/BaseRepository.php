@@ -112,6 +112,13 @@ abstract class BaseRepository implements RepositoryContract
         return \Schema::getColumnListing($this->table());
     }
 
+    public function logs()
+    {
+        return \App\AdminLog::where('table', $this->table())
+            ->orderBy('id', 'DESC')
+            ->get();
+    }
+
     /**
      * Get all the model records in the database.
      *
