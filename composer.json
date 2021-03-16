@@ -22,14 +22,14 @@
     "extra": {
         "laravel": {
             "providers": [
-                "FsaNano\\LaravelMakeRepository\\RepositoryServiceProvider"
+                "JasonGuru\\LaravelMakeRepository\\RepositoryServiceProvider"
             ]
         }
     },
     
     "autoload": {
         "psr-4": {
-            "FsaNano\\LaravelMakeRepository\\": "src/"
+            "JasonGuru\\LaravelMakeRepository\\": "src/"
         },
         "classmap": ["src/"]
     }
